@@ -13,6 +13,7 @@
 		0F30AFC91E9BD91700FF1673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F30AFC81E9BD91700FF1673 /* Assets.xcassets */; };
 		0F30AFCC1E9BD91700FF1673 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F30AFCA1E9BD91700FF1673 /* LaunchScreen.storyboard */; };
 		0F30AFD41E9BDD2700FF1673 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F30AFD31E9BDD2700FF1673 /* QuestionViewController.swift */; };
+		0FEE1A731EADFF3300465057 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEE1A721EADFF3300465057 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0F30AFCB1E9BD91700FF1673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F30AFCD1E9BD91700FF1673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F30AFD31E9BDD2700FF1673 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		0FEE1A721EADFF3300465057 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				0F30AFC11E9BD91700FF1673 /* AppDelegate.swift */,
 				0F30AFC31E9BD91700FF1673 /* StartViewController.swift */,
 				0F30AFD31E9BDD2700FF1673 /* QuestionViewController.swift */,
+				0FEE1A721EADFF3300465057 /* Question.swift */,
 				0F30AFC51E9BD91700FF1673 /* Main.storyboard */,
 				0F30AFC81E9BD91700FF1673 /* Assets.xcassets */,
 				0F30AFCA1E9BD91700FF1673 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F30AFC41E9BD91700FF1673 /* StartViewController.swift in Sources */,
+				0FEE1A731EADFF3300465057 /* Question.swift in Sources */,
 				0F30AFC21E9BD91700FF1673 /* AppDelegate.swift in Sources */,
 				0F30AFD41E9BDD2700FF1673 /* QuestionViewController.swift in Sources */,
 			);

@@ -74,7 +74,7 @@
         <!--Frage-->
         <scene sceneID="TXC-40-lkp">
             <objects>
-                <viewController id="3mc-rj-Aq5" customClass="QuestionViewController" customModule="SwiftRiddle" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuestionViewController" id="3mc-rj-Aq5" customClass="QuestionViewController" customModule="SwiftRiddle" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SSV-7y-DDl"/>
                         <viewControllerLayoutGuide type="bottom" id="6gO-e1-2li"/>
