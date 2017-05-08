@@ -19,6 +19,9 @@ class QuestionViewController: UIViewController {
     var allQuestions: [Question] = []
     var currentQuestion: Question?
     
+    var allQuestionsCount = 0
+    var correctAnswersCount = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,6 +32,9 @@ class QuestionViewController: UIViewController {
         answerButton2.setTitle(currentQuestion?.answerText2, for: .normal)
         answerButton3.setTitle(currentQuestion?.answerText3, for: .normal)
         answerButton4.setTitle(currentQuestion?.answerText4, for: .normal)
+        
+        allQuestionsCount += 1
+        title = "Frage #\(allQuestionsCount)"
     }
     
     @IBAction func button1Pressed(_ sender: UIButton) {
@@ -51,6 +57,7 @@ class QuestionViewController: UIViewController {
         if answer == currentQuestion?.correctAnswer {
             presentAlert(withTitle: "Richtig 👍")
             button.backgroundColor = .green
+            correctAnswersCount += 1
         } else {
             presentAlert(withTitle: "Leider falsch")
             button.backgroundColor = .red
@@ -65,14 +72,23 @@ class QuestionViewController: UIViewController {
             let viewController = self.storyboard?.instantiateViewController(withIdentifier: "QuestionViewController")
             if let questionController = viewController as? QuestionViewController, self.allQuestions.count > 0 {
                 questionController.allQuestions = self.allQuestions
+                questionController.correctAnswersCount = self.correctAnswersCount
+                questionController.allQuestionsCount = self.allQuestionsCount
                 self.navigationController?.pushViewController(questionController, animated: true)
             } else {
-                // TODO: show result
+                self.performSegue(withIdentifier: "ShowResultSegue", sender: nil)
             }
         }
         alert.addAction(action)
         
         present(alert, animated: true, completion: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let resultController = segue.destination as? ResultViewController {
+            resultController.correctAnswersCount = correctAnswersCount
+            resultController.allQuestionsCount = allQuestionsCount
+        }
     }
     
 }
