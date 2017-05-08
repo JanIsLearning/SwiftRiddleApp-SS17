@@ -6,10 +6,11 @@
 //  Copyright © 2017 Jan Schwebel. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Question {
     
+    var image: UIImage
     var questionText: String
     var answerText1: String
     var answerText2: String

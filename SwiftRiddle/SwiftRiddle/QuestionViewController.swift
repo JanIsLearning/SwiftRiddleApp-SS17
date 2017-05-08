@@ -10,6 +10,7 @@ import UIKit
 
 class QuestionViewController: UIViewController {
     
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var answerButton1: UIButton!
     @IBOutlet weak var answerButton2: UIButton!
@@ -27,6 +28,7 @@ class QuestionViewController: UIViewController {
         
         currentQuestion = allQuestions.removeFirst()
         
+        imageView.image = currentQuestion?.image
         questionLabel.text = currentQuestion?.questionText
         answerButton1.setTitle(currentQuestion?.answerText1, for: .normal)
         answerButton2.setTitle(currentQuestion?.answerText2, for: .normal)

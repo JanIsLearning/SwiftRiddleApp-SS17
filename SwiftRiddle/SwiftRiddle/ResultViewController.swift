@@ -40,4 +40,12 @@ class ResultViewController: UIViewController {
         navigationController?.popToRootViewController(animated: true)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let navigationController = segue.destination as? UINavigationController,
+            let nameInputController = navigationController.topViewController as? NameInputTableViewController {
+            nameInputController.correctAnswersCount = correctAnswersCount
+            nameInputController.allQuestionsCount = allQuestionsCount
+        }
+    }
+    
 }

@@ -86,20 +86,23 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hQJ-1m-MYm">
                                 <rect key="frame" x="8" y="72" width="359" height="587"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dyg-zd-ix1">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="190.5"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wieviele Einwohner hat Darmstadt?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcH-ME-hcf">
-                                        <rect key="frame" x="0.0" y="0.0" width="359" height="289.5"/>
+                                        <rect key="frame" x="0.0" y="198.5" width="359" height="190"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MWm-qE-Z0q">
-                                        <rect key="frame" x="0.0" y="297.5" width="359" height="289.5"/>
+                                        <rect key="frame" x="0.0" y="396.5" width="359" height="190.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="g4t-UH-JnI">
-                                                <rect key="frame" x="0.0" y="0.0" width="175.5" height="289.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="175.5" height="190.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIB-v9-0NC">
-                                                        <rect key="frame" x="0.0" y="0.0" width="175.5" height="141"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="175.5" height="91.5"/>
                                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="50k"/>
                                                         <connections>
@@ -107,7 +110,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8t-Pe-IEn">
-                                                        <rect key="frame" x="0.0" y="149" width="175.5" height="140.5"/>
+                                                        <rect key="frame" x="0.0" y="99.5" width="175.5" height="91"/>
                                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="150k"/>
                                                         <connections>
@@ -117,10 +120,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SCg-aV-lB0">
-                                                <rect key="frame" x="183.5" y="0.0" width="175.5" height="289.5"/>
+                                                <rect key="frame" x="183.5" y="0.0" width="175.5" height="190.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDd-dS-544">
-                                                        <rect key="frame" x="0.0" y="0.0" width="175.5" height="141"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="175.5" height="91.5"/>
                                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="100k"/>
                                                         <connections>
@@ -128,7 +131,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Etn-8W-ofT">
-                                                        <rect key="frame" x="0.0" y="149" width="175.5" height="140.5"/>
+                                                        <rect key="frame" x="0.0" y="99.5" width="175.5" height="91"/>
                                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="200k"/>
                                                         <connections>
@@ -156,6 +159,7 @@
                         <outlet property="answerButton2" destination="rDd-dS-544" id="l6M-Ko-msd"/>
                         <outlet property="answerButton3" destination="S8t-Pe-IEn" id="Tto-uw-kVO"/>
                         <outlet property="answerButton4" destination="Etn-8W-ofT" id="LAt-DA-B8G"/>
+                        <outlet property="imageView" destination="dyg-zd-ix1" id="1Ox-m1-t5b"/>
                         <outlet property="questionLabel" destination="NcH-ME-hcf" id="Bvi-64-htD"/>
                         <segue destination="1XR-wJ-Apo" kind="show" identifier="ShowResultSegue" id="Yw9-Ju-bMg"/>
                     </connections>
@@ -248,6 +252,83 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aEr-UX-92X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1922" y="36"/>
+        </scene>
+        <!--Punkte speichern-->
+        <scene sceneID="jQc-jc-a0j">
+            <objects>
+                <tableViewController id="2XC-zv-g88" customClass="NameInputTableViewController" customModule="SwiftRiddle" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="aPi-PT-FJa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="hC8-1Z-bAz">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="MBg-jJ-wYh">
+                                        <rect key="frame" x="0.0" y="35" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MBg-jJ-wYh" id="ZQL-5r-8JC">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name eingeben" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bjf-JA-GDd">
+                                                    <rect key="frame" x="8" y="0.0" width="359" height="43.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Bjf-JA-GDd" firstAttribute="leading" secondItem="ZQL-5r-8JC" secondAttribute="leadingMargin" id="RKZ-U3-WEt"/>
+                                                <constraint firstAttribute="bottom" secondItem="Bjf-JA-GDd" secondAttribute="bottom" id="eEp-bV-Miw"/>
+                                                <constraint firstItem="Bjf-JA-GDd" firstAttribute="top" secondItem="ZQL-5r-8JC" secondAttribute="top" id="mGi-h7-05b"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Bjf-JA-GDd" secondAttribute="trailing" id="qhM-20-BDW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="2XC-zv-g88" id="fUJ-CZ-Od7"/>
+                            <outlet property="delegate" destination="2XC-zv-g88" id="BaI-Kw-Qby"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Punkte speichern" id="tn1-IW-Mvs">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Far-k8-zM4">
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="2XC-zv-g88" id="GBr-17-3mc"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="VZz-rf-UEE">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="2XC-zv-g88" id="CJm-KB-dlv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="playerNameTextField" destination="Bjf-JA-GDd" id="Pbv-0R-E1h"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KdO-Ar-vqb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3756" y="36"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Y05-ah-GHD">
+            <objects>
+                <navigationController id="x9x-QF-Ng2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="I1Y-c5-SqG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2XC-zv-g88" kind="relationship" relationship="rootViewController" id="Pi8-dY-G5a"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nac-MC-g1T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2804" y="36"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mbz-J7-KJ8">
