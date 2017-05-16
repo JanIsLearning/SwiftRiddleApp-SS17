@@ -25,6 +25,17 @@ class StartViewController: UIViewController {
         allQuestions = [question1, question2, question3]
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let defaults = UserDefaults.standard
+        if let playerName = defaults.string(forKey: "playerName") {
+            let correctAnswersCount = defaults.integer(forKey: "correctAnswers")
+            let allQuestionsCount = defaults.integer(forKey: "allQuestions")
+            label.text = "Letztes Spiel: \(playerName) (\(correctAnswersCount)/\(allQuestionsCount))"
+        }
+    }
+    
     @IBAction func buttonPressed(_ sender: UIButton) {
         label.text = "Hallo Darmstadt!"
         imageView.image = #imageLiteral(resourceName: "LogoDarmstadt")
