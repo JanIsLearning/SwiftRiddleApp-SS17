@@ -42,7 +42,7 @@
                                 <state key="normal" title="Jetzt starten!"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TAj-uR-sJ0"/>
-                                    <segue destination="3mc-rj-Aq5" kind="show" id="qe0-uH-Y6t"/>
+                                    <segue destination="9cZ-pS-hlw" kind="show" id="i1R-M6-Ycg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -70,6 +70,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="33" y="38"/>
+        </scene>
+        <!--Auswahl Kategorie-->
+        <scene sceneID="bae-gU-u3R">
+            <objects>
+                <tableViewController id="9cZ-pS-hlw" customClass="CategorySelectionTableViewController" customModule="SwiftRiddle" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="pjh-x8-b3q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="categoryCell" textLabel="Zkx-M9-yGW" style="IBUITableViewCellStyleDefault" id="vjq-5L-Mdb">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vjq-5L-Mdb" id="Wxu-Fw-8sw">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zkx-M9-yGW">
+                                            <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="3mc-rj-Aq5" kind="show" id="j8r-5e-kqd"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9cZ-pS-hlw" id="MMO-th-bps"/>
+                            <outlet property="delegate" destination="9cZ-pS-hlw" id="buU-8e-YCL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Auswahl Kategorie" id="2aQ-DS-SI5"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1tH-B0-ECo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="985" y="-752"/>
         </scene>
         <!--Frage-->
         <scene sceneID="TXC-40-lkp">
@@ -168,7 +209,7 @@
             </objects>
             <point key="canvasLocation" x="985" y="37"/>
         </scene>
-        <!--Result View Controller-->
+        <!--Ergebnis-->
         <scene sceneID="afi-TE-0NB">
             <objects>
                 <viewController id="1XR-wJ-Apo" customClass="ResultViewController" customModule="SwiftRiddle" customModuleProvider="target" sceneMemberID="viewController">
@@ -243,6 +284,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="wnt-th-UGA" secondAttribute="trailing" id="z78-2C-GEC"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Ergebnis" id="SEm-Mg-KWa"/>
                     <connections>
                         <outlet property="allQuestionsCountLabel" destination="ryh-SZ-Nkw" id="giy-Rg-Xyq"/>
                         <outlet property="correctAnswersCountLabel" destination="9Zq-Pa-nny" id="MLc-58-P8V"/>

@@ -10,6 +10,7 @@ import UIKit
 
 struct Question {
     
+    var category: String
     var image: UIImage
     var questionText: String
     var answerText1: String
